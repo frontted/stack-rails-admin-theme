@@ -1,0 +1,23 @@
+.breadcrumb-item {
+  text-transform: uppercase;
+  letter-spacing: 0.85px;
+  font-size: .825rem;
+  font-weight: 600;
+  i.material-icons {
+    position: relative;
+    top: -1px;
+  }
+  a {
+    color: #364C66;
+    &:hover {
+      color: $link-color;
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  & + [aria-label="breadcrumb"] {
+    margin-top: -.6rem;
+  }
+}

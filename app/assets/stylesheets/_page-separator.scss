@@ -1,0 +1,35 @@
+.page-separator {
+  position: relative;
+  color: $text-muted;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  margin: .5rem 0;
+  
+  &::before {
+    content: '';
+    height: 1px;
+    background-color: $border-color;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  &__text {
+    display: inline-flex;
+    padding: .25rem 1rem;
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: $dark-gray;
+    line-height: .9375rem;
+    font-weight: bold;
+    background-color: white;
+    max-width: 90%;
+    @include hover {
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.preloader {
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  position: fixed;
+  z-index: 99999;
+  background: $dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}

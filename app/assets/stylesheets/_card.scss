@@ -1,0 +1,102 @@
+.card {
+  
+  box-shadow: 0 10px 25px 0 rgba(50,50,93,0.07), 0 5px 15px 0 rgba(0,0,0,0.07);
+  border: none;
+  
+  margin-bottom: $grid-gutter-width / 2;
+  
+  @include media-breakpoint-up(lg) {
+    margin-bottom: $grid-gutter-width;
+  }
+}
+
+.card-margin { 
+  margin-bottom: $grid-gutter-width / 2;
+  
+  @include media-breakpoint-up(lg) {
+    margin-bottom: $grid-gutter-width;
+  }
+}
+
+.form-row .card.form-row__card {
+  margin-bottom: 10px;
+}
+
+.card-list > .card:last-child {
+  margin-bottom: 0;
+}
+
+.card-group {
+  @include media-breakpoint-up(sm) {
+    margin-bottom: $grid-gutter-width;
+    box-shadow: 0 10px 25px 0 rgba(50,50,93,0.07), 0 5px 15px 0 rgba(0,0,0,0.07);
+    @if $enable-rounded {
+      @include border-radius($card-border-radius);
+    }
+    > .card {
+      box-shadow: none;
+      border: $card-border-width solid $card-border-color;
+    }
+  }
+}
+
+.card-header {
+  background-color: #F7F8F9;
+}
+.card-header__title {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: $font-family-base;
+  letter-spacing: 0;
+  color: $headings-color;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .active & {
+    color: $primary;
+  }
+}
+
+.card-header-large {
+  padding-top: 1.4375rem;
+  padding-bottom: 1.4375rem;
+}
+
+
+.card-header-sm {
+  padding-top: .85rem;
+  padding-bottom: .85rem;
+}
+
+.card-footer {
+  background-color: white;
+}
+
+.card-body-lg {
+  padding: 1.6875rem;
+}
+.card-body-x-lg {
+  padding-left: 1.6875rem;
+  padding-right: 1.6875rem;
+}
+
+///////////////////////////////////////////////////////
+// CARD GROUP combined with GRID                     //
+//                                                   //
+// <div class="row card-group-row">                  //
+//   <div class="col-md-4 card-group-row__col">      //
+//     <div class="card card-group-row__card"></div> //
+//   </div>                                          //
+// </div>                                            //
+///////////////////////////////////////////////////////
+
+.card-group-row {
+  display: flex;
+  flex-flow: row wrap;
+  &__col {
+    display: flex;
+  }
+  &__card {
+    flex: 1 0 0;
+  }
+}

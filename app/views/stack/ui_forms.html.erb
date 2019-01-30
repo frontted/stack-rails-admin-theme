@@ -1,0 +1,216 @@
+<div class="container-fluid page__heading-container">
+  <div class="page__heading">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="#"><i class="material-icons icon-20pt">home</i></a></li>
+        <li class="breadcrumb-item">UI Components</li>
+        <li class="breadcrumb-item active" aria-current="page">Forms</li>
+      </ol>
+    </nav>
+    
+    <h1 class="m-0">Forms</h1>
+  </div>
+</div>
+<div class="container-fluid page__container">
+
+  <div class="card card-form">
+    <div class="row no-gutters">
+      <div class="col-lg-4 card-body">
+        <p><strong class="headings-color">Default Forms</strong></p>
+        <p class="text-muted">Stack supports all of Bootstrap's default form styling in addition to a handful of new input types and features. Please <a href="https://getbootstrap.com/docs/4.1/components/forms/" target="_blank">read the official documentation</a> for a full list of options from Bootstrap's core library.</p>
+      </div>
+      <div class="col-lg-8 card-form__body card-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Your email:</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address ..">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Your password:</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your password ..">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-form">
+    <div class="row no-gutters">
+      <div class="col-lg-4 card-body">
+        <p><strong class="headings-color">Form Validation</strong></p>
+        <p class="text-muted">Provide valuable, actionable feedback to your users with HTML5 form validation. Indicate invalid and valid form fields with <code>.is-invalid</code> and <code>.is-valid</code> classes.</p>
+      </div>
+      <div class="col-lg-8 card-form__body card-body">
+        <form>
+          <div class="was-validated">
+            <div class="form-row">
+              <div class="col-12 col-md-6 mb-3">
+                <label for="validationSample01">First name</label>
+                <input type="text" class="form-control" id="validationSample01" placeholder="First name" value="Mark" required="">
+                <div class="invalid-feedback">Please provide a first name.</div>
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="col-12 col-md-6 mb-3">
+                <label for="validationSample02">Last name</label>
+                <input type="text" class="form-control" id="validationSample02" placeholder="Last name" value="Otto" required="">
+                <div class="invalid-feedback">Please provide a last name.</div>
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-12 col-md-6 mb-3">
+                <label for="validationSample03">City</label>
+                <input type="text" class="form-control" id="validationSample03" placeholder="City" required="">
+                <div class="invalid-feedback">Please provide a valid city.</div>
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="col-12 col-md-6 mb-3">
+                <label for="validationSample04">State</label>
+                <input type="text" class="form-control" id="validationSample04" placeholder="State" required="">
+                <div class="invalid-feedback">Please provide a valid state.</div>
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="custom-control custom-checkbox">
+              <input class="custom-control-input" type="checkbox" value="" id="invalidCheck01" required="" checked="">
+              <label class="custom-control-label" for="invalidCheck01">
+                Agree to terms and conditions
+              </label>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-form">
+    <div class="row no-gutters">
+      <div class="col-lg-4 card-body">
+        <p><strong class="headings-color">Search</strong></p>
+        <p class="text-muted">A dedicated form group alternative for search forms that always keeps the submit button as part of the form control.</p>
+      </div>
+      <div class="col-lg-8 card-form__body card-body">
+        <form action="#">
+          <div class="form-group">
+            <div class="row">
+              <div class="col-lg">
+                <label for="searchSample03">Regular</label>
+                <div class="search-form search-form--light">
+                  <input type="text" class="form-control" placeholder="Search icons" id="searchSample03">
+                  <button class="btn" type="button" role="button"><i class="material-icons">search</i></button>
+                </div>
+              </div>
+              <div class="col-lg">
+                <label for="searchSample04">Flush</label>
+                <div class="search-form form-control-flush search-form--light">
+                  <input type="text" class="form-control px-0" placeholder="Search icons" id="searchSample04">
+                  <button class="btn" type="button" role="button"><i class="material-icons">search</i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="searchSample01">Large</label>
+            <div class="search-form search-form--light input-group-lg">
+              <input type="text" class="form-control" placeholder="Search icons" id="searchSample01">
+              <button class="btn" type="button" role="button"><i class="material-icons">search</i></button>
+            </div>
+          </div>
+          <div class="form-group m-0">
+            <label for="searchSample02">Rounded</label>
+            <div class="search-form form-control-rounded search-form--light input-group-lg">
+              <input type="text" class="form-control" placeholder="Search icons" id="searchSample02">
+              <button class="btn" type="button" role="button"><i class="material-icons">search</i></button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-form">
+    <div class="row no-gutters">
+      <div class="col-lg-4 card-body">
+        <p><strong class="headings-color">Merge Group</strong></p>
+        <p class="text-muted">A slightly modified version of the default input groups that always keeps icons as a part of the form control. Also works with validation.</p>
+      </div>
+      <div class="col-lg-8 card-form__body card-body">
+        <form action="#">
+          <div class="form-group">
+            <div class="input-group input-group-merge">
+              <input type="text" class="form-control form-control-prepended" required="" placeholder="Input group prepended">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <span class="material-icons">remove_red_eye</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group input-group-merge">
+              <input type="text" class="form-control form-control-appended" required="" placeholder="Input group appended">
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <span class="material-icons">lock_outline</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group input-group-merge">
+              <input type="text" class="form-control form-control-prepended is-valid" required="" placeholder="Input group prepended">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <span class="material-icons">remove_red_eye</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input-group input-group-merge">
+            <input type="text" class="form-control form-control-appended is-invalid" required="" placeholder="Input group appended">
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="material-icons">lock_outline</span>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-form">
+    <div class="row no-gutters">
+      <div class="col-lg-4 card-body">
+        <p><strong class="headings-color">Rounded</strong></p>
+        <p class="text-muted">Form control with rounded corners with the <code>.form-control-rounded</code> modifier.</p>
+      </div>
+      <div class="col-lg-8 card-form__body card-body d-flex align-items-center">
+        <div class="flex">
+          <label for="roundedSample01">Rounded</label>
+          <input type="text" class="form-control form-control-rounded" placeholder="Rounded form control ..." id="roundedSample01">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-form">
+    <div class="row no-gutters">
+      <div class="col-lg-4 card-body">
+        <p><strong class="headings-color">Flush</strong></p>
+        <p class="text-muted">Remove paddings and borders from a form control with the <code>.form-control-flush</code> modifier.</p>
+      </div>
+      <div class="col-lg-8 card-form__body card-body d-flex align-items-center">
+        <div class="flex">
+          <label for="flushSample01">Flush</label>
+          <input type="text" class="form-control form-control-flush" placeholder="Flush form control ..." id="flushSample01">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

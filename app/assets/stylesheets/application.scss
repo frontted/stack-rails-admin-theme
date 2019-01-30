@@ -1,0 +1,35 @@
+//** CORE
+// Variables
+@import 'variables';
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+// MDK
+@import 'material-design-kit/src/style';
+// SIMPLEBAR (SCROLL)
+@import 'simplebar/dist/simplebar';
+
+//** APP
+@import 'flexbox';
+@import 'icons';
+@import 'type';
+@import 'layout';
+@import 'dropdown';
+@import 'header';
+@import 'navbar';
+@import 'navbar-dark';
+@import 'drawer';
+@import 'sidebar';
+@import 'card';
+@import 'button';
+@import 'breadcrumb';
+@import 'form';
+@import 'input-group';
+@import 'progress';
+@import 'list-group';
+@import 'borders';
+@import 'loader';
+@import 'helpers';
+@import 'badge';
+@import 'pagination';
+@import 'page-separator';
+@import 'preloader';

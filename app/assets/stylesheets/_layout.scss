@@ -1,0 +1,115 @@
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+.mdk-header-layout,
+.mdk-drawer-layout,
+.mdk-drawer-layout__content {
+  height: initial;
+  min-height: 100%;
+}
+
+.page {
+  padding-bottom: $grid-gutter-width;
+}
+
+.page__container,
+.page__heading-container {
+  .layout-default &,
+  .layout-fluid & {
+    @include media-breakpoint-up(xl) {
+      padding-left: $grid-gutter-width;
+      padding-right: $grid-gutter-width;
+    }
+  }
+  .layout-fluid & {
+    max-width: 1300px;
+  }
+  .layout-default & {
+    max-width: 1300px;
+  }
+}
+
+.page__heading {
+  h1 {line-height: 1;}
+  padding-top: $grid-gutter-width /2;
+  padding-bottom: $grid-gutter-width/2;
+  @include media-breakpoint-up(xl) {
+    &:not(.page__heading--xl_small) {
+      padding-top: $grid-gutter-width;
+      padding-bottom: $grid-gutter-width;
+      
+    }
+  }
+}
+.layout-default, .layout-fixed, .layout-mini
+  {
+    .page__heading {
+      border-bottom:1px solid $border-color;
+      margin-bottom: $grid-gutter-width/2;
+      @include media-breakpoint-up(xl) {
+        &:not(.page__heading--xl_small) {
+          margin-bottom: $grid-gutter-width;
+        }
+      }
+    }
+}
+
+.page__header {
+  background: white;
+  box-shadow: 0 5px 15px 0 rgba(227,227,227,0.50);
+  margin-bottom: $grid-gutter-width/2;
+  @include media-breakpoint-up(xl) {
+    margin-bottom: $grid-gutter-width;
+  }
+  z-index: 3;
+  & + .page__header {
+    z-index: 2;
+  }
+  position: relative;
+}
+
+// sticky subnav
+
+.layout-sticky-subnav {
+  .mdk-header-layout {
+    overflow: initial;
+  }
+  .page__header {
+    &-nav {
+      position: sticky;
+      top: $navbar-height;
+      z-index: 1;
+    }
+    &:first-child {
+      margin-bottom: 0;
+      box-shadow: none;
+    }
+  }
+  .page__container {
+    z-index: 0;
+    position: relative;
+  }
+}
+
+.mdk-header--shadow::after {
+  box-shadow: 0 5px 15px 0 rgba(227,227,227,0.50);
+  bottom: 0;
+  height: $navbar-height;
+}
+
+.projects-item {
+  margin-bottom: 0 !important;
+  padding-bottom: .4375rem;
+  border-left: 1px dotted rgba(55, 77, 103, 0.2);
+  margin-left: 10px;
+}
+
+.bottom-spacing {
+  margin-bottom: $grid-gutter-width / 2;
+  
+  @include media-breakpoint-up(lg) {
+    margin-bottom: $grid-gutter-width;
+  }
+}

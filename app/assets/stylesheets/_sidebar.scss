@@ -1,0 +1,66 @@
+@import 'sidebar-style-guide/sass/style';
+
+.sidebar {
+  height: 100%;
+  text-align: initial;
+  &:not([data-simplebar]) {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .simplebar-content {
+    height: 100%;
+    overflow-x: hidden !important;
+  }
+}
+
+[data-simplebar-force-enabled="true"] .simplebar-content::-webkit-scrollbar { 
+  display: none;
+}
+
+.sidebar-heading {
+  margin-bottom: $sidebar-spacing-y/2;
+}
+
+.sidebar-menu + .sidebar-heading {
+  margin-top: 1.625rem;
+}
+.sidebar-heading + .sidebar-heading {
+  margin-top: 2.25rem;
+}
+.sidebar-heading:first-child {
+  margin-top: 1.25rem;
+}
+
+.sidebar-menu-item.active {
+  &:not(.open) {
+    border-right: 2px solid $primary;
+  }
+}
+.sidebar-submenu > .sidebar-menu-item:last-child {
+  margin-bottom: 1rem;
+}
+
+.sidebar-submenu .sidebar-menu-text {
+  padding-left: 1rem;
+  margin-left: .75rem;
+}
+
+.sidebar .progress {
+  height: 7px;
+}
+
+.sidebar-light .sidebar-submenu {
+  .sidebar-menu-text {
+    border-left: 1px dotted rgba($dark-gray, .24);
+  }
+}
+
+.sidebar-dark .sidebar-submenu {
+  .sidebar-menu-text {
+    border-left: 1px dotted rgba($dark-gray, .24);
+  }
+}
+
+.sidebar-menu-toggle-icon {
+  font-weight: normal;
+}

@@ -1,0 +1,108 @@
+<div class="mdk-drawer js-mdk-drawer" id="default-drawer" data-align="start">
+  <div class="mdk-drawer__content">
+    <div class="sidebar sidebar-light sidebar-left simplebar" data-simplebar>
+      <div class="sidebar-heading sidebar-m-t">Menu</div>
+      <ul class="sidebar-menu">
+        <li class="sidebar-menu-item <% if current_page?(root_path) || current_page?(stack_path(:index)) || current_page?(stack_path(:staff)) ||  current_page?(stack_path(:analytics)) %> active<% end %>">
+          <a class="sidebar-menu-button" href="<%= root_path %>">
+            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">dvr</i>
+            <span class="sidebar-menu-text">Dashboard</span>
+          </a>
+        </li>             
+      </ul>
+      <div class="sidebar-heading">UI Components</div>
+      <div class="sidebar-block p-0">
+        <ul class="sidebar-menu" id="components_menu">
+          <li class="sidebar-menu-item <% if current_page?(stack_path(:ui_buttons))%>active<% end%>">
+            <a class="sidebar-menu-button" href="<%= stack_path(:ui_buttons) %>">
+              <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">mouse</i>
+              <span class="sidebar-menu-text">Buttons</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item <% if current_page?(stack_path(:ui_alerts))%>active<% end%>">
+            <a class="sidebar-menu-button" href="<%= stack_path(:ui_alerts) %>">
+              <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">notifications</i>
+              <span class="sidebar-menu-text">Alerts</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item <% if current_page?(stack_path(:ui_modals))%>active<% end%>">
+            <a class="sidebar-menu-button" href="<%= stack_path(:ui_modals) %>">
+              <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">aspect_ratio</i>
+              <span class="sidebar-menu-text">Modals</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item <% if current_page?(stack_path(:ui_icons))%>active<% end%>">
+            <a class="sidebar-menu-button" href="<%= stack_path(:ui_icons) %>">
+              <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">brush</i>
+              <span class="sidebar-menu-text">Icons</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item <% if current_page?(stack_path(:ui_forms))%>active<% end%>">
+            <a class="sidebar-menu-button" href="<%= stack_path(:ui_forms) %>">
+              <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">text_format</i>
+              <span class="sidebar-menu-text">Forms</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item <% if current_page?(stack_path(:ui_loaders))%>active<% end%>">
+            <a class="sidebar-menu-button" href="<%= stack_path(:ui_loaders) %>">
+              <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">refresh</i>
+              <span class="sidebar-menu-text">Loaders</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item <% if current_page?(stack_path(:ui_pagination))%>active<% end%>">
+            <a class="sidebar-menu-button" href="<%= stack_path(:ui_pagination) %>">
+              <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">last_page</i>
+              <span class="sidebar-menu-text">Pagination</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a class="sidebar-menu-button" href="https://www.frontted.com/stack-rails">
+              <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">person</i>
+              <span class="sidebar-menu-text">Avatars</span>
+              <span class="badge badge-warning ml-auto">PRO</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a class="sidebar-menu-button" href="https://www.frontted.com/stack-rails">
+              <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">pie_chart_outlined</i>
+              <span class="sidebar-menu-text">Charts</span>
+              <span class="badge badge-warning ml-auto">PRO</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a class="sidebar-menu-button" href="https://www.frontted.com/stack-rails">
+              <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">event_available</i>
+              <span class="sidebar-menu-text">Time &amp; Date</span>
+              <span class="badge badge-warning ml-auto">PRO</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a class="sidebar-menu-button" href="https://www.frontted.com/stack-rails">
+              <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">dns</i>
+              <span class="sidebar-menu-text">Custom Tables</span>
+              <span class="badge badge-warning ml-auto">PRO</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a class="sidebar-menu-button" href="https://www.frontted.com/stack-rails">
+              <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">control_point</i>
+              <span class="sidebar-menu-text">Drag &amp; Drop</span>
+              <span class="badge badge-warning ml-auto">PRO</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a class="sidebar-menu-button" href="https://www.frontted.com/stack-rails">
+              <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">location_on</i>
+              <span class="sidebar-menu-text">Vector Maps</span>
+              <span class="badge badge-warning ml-auto">PRO</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar-p-a">
+        <a href="https://www.frontted.com/themes/stack-rails" class="btn btn-primary btn-block" target="_blank">Purchase PRO &dollar;99</a>
+      </div>
+
+    </div>
+  </div>
+</div>

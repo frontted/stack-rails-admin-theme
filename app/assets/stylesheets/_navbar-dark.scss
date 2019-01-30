@@ -1,0 +1,49 @@
+.navbar-dark {
+  &.bg-dark [class*="border-"] {
+    border-color: rgba(0,0,0,.34) !important;
+  }
+  
+  &[class*=primary] [class*="border-"] {
+    border-color: rgba(white,.24) !important;
+  }
+
+  .search-form {
+    border-color: transparent;
+    .form-control {
+      color: rgba(white, .84);
+    }
+  }
+
+  &.bg-dark .search-form {
+    background-color: rgba(0,0,0,.24);
+    .form-control::placeholder {
+      color: #66768A;
+      font-weight: 500;
+      
+    }
+    .btn {
+      color: rgba(white, .54);
+    }
+  }
+
+  &[class*=primary] .search-form {
+    background-color: rgba(0,0,0,.12);
+    .form-control::placeholder {
+      color: white;
+    }
+    .btn {
+      color: rgba(white, .54);
+    }
+  }
+
+  .navbar-toggler-custom {
+    background-color: rgba(black, .24);
+    .material-icons {
+      color: white;
+    }
+  }
+  .nav-icon,
+  .navbar-notifications-indicator {
+    color: white;
+  }
+}

@@ -1,0 +1,80 @@
+.is-loading {
+  position: relative;
+  color: transparent !important;
+}
+
+.is-loading:after, 
+.loader {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  animation: 1s is-loading linear infinite;
+  border: 3px solid $body-color;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.is-loading-sm:after, .loader-sm {
+  width: 1rem;
+  height: 1rem;
+  border-width: 2px;
+}
+
+.is-loading-lg:after, .loader-lg {
+  width: 2rem;
+  height: 2rem;
+  border-width: 5px;
+}
+
+.is-loading > * {
+  opacity: 0 !important;
+}
+
+.is-loading:after {
+  position: absolute;
+  top: calc(50% - 1.5rem / 2);
+  left: calc(50% - 1.5rem / 2);
+  content: "";
+}
+
+.is-loading-sm:after {
+  top: calc(50% - 1rem / 2);
+  left: calc(50% - 1rem / 2);
+}
+
+.is-loading-lg:after {
+  top: calc(50% - 2rem / 2);
+  left: calc(50% - 2rem / 2);
+}
+
+@each $color, $value in $theme-colors {
+  .is-loading-#{$color}:after,
+  .btn-outline-#{$color}.is-loading:after,
+  .loader-#{$color} {
+    border-color: $value;
+    border-bottom-color: transparent;
+  }
+  .btn-#{$color}.is-loading:after {
+    border-color: color-yiq($value);
+    border-bottom-color: transparent;
+  }
+}
+
+@keyframes is-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.loader-list {
+  display: flex;
+  align-items: center;
+  > .loader {
+    margin-bottom: .75rem;
+    margin-left: .5rem;
+  }
+}

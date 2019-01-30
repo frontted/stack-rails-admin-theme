@@ -1,0 +1,27 @@
+.button-list > .btn {
+  margin-bottom: .75rem;
+  margin-left: .5rem;
+}
+
+.btn-rounded {
+  border-radius: 100px;
+}
+
+.btn .material-icons {
+  font-size:18px;
+  vertical-align: middle;
+  position:relative;
+  top: -1px;
+}
+
+.btn-light {
+  @include button-variant($background: white, $border: $border-color);
+}
+
+.btn-flush {
+  padding: 0;
+  background: none;
+  color: inherit;
+  line-height: 1;
+  box-shadow: none;
+}

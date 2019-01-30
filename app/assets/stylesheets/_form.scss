@@ -1,0 +1,100 @@
+.custom-control-label::before {
+  box-shadow: none;
+  background-color: white;
+  border: 1px solid #EFEFEF;
+}
+
+.custom-control-input {
+  &:checked ~ .custom-control-label::before {
+    border: none;
+  }
+}
+
+%label {
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: rgba($dark-gray, .84);
+  line-height: .9375rem;
+  margin-bottom: .5rem;
+  font-weight: bold;
+}
+
+.text-label {
+  @extend %label;
+}
+
+.text-label-large {
+  @extend %label;
+  font-size: $font-size-base;
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+.card-form {
+  .card-body {
+    padding: 1.6875rem;
+  }
+  .card-body-form-group {
+    padding: $card-spacer-x;
+    padding-bottom: $card-spacer-x - $form-group-margin-bottom;
+  }
+  &__body {
+    background-color: #F3F5F6;
+
+    label:not([class]) {
+      @extend %label;
+    }
+  }
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+.form-control-rounded {
+  border-radius: 20rem;
+}
+
+.form-control-flush {
+  padding: 0;
+  border-width: 0;
+  box-shadow: none;
+  background-color: transparent;
+  &:focus {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.custom-file-naked {
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  .custom-file-input {
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    line-height: 1;
+  }
+  .custom-file-label {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    cursor: pointer;
+    line-height: 1;
+    box-shadow: none;
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.custom-select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

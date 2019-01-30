@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Stack Rails Base - Rails 5 Free Admin Theme</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="<%= @body_class || 'layout-default' %>">
+    <!-- Header Layout -->
+    <div class="mdk-header-layout js-mdk-header-layout">
+
+      <!-- Header -->
+      <div id="header" class="mdk-header js-mdk-header m-0" data-fixed>
+        <div class="mdk-header__content">
+          <%= render 'layouts/navbar'%>
+        </div>
+      </div>
+      <!-- // END Header -->
+
+      <!-- Header Layout Content -->
+      <div class="mdk-header-layout__content">
+
+        <div class="mdk-drawer-layout js-mdk-drawer-layout" data-push data-responsive-width="992px">
+          <div class="mdk-drawer-layout__content page">
+            <%# CONTENT  %>
+            <%= yield %>
+          </div>
+          <!-- // END drawer-layout__content -->
+
+          <%= render 'layouts/drawer_left' %>
+        </div>
+        <!-- // END drawer-layout -->
+
+      </div>
+      <!-- // END header-layout__content -->
+
+    </div>
+    <!-- // END header-layout -->
+
+    <%= content_for :footer %>
+
+    <%= javascript_include_tag 'core-scripts', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <%= content_for :footer_scripts %>
+  </body>
+</html>

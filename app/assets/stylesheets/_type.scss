@@ -1,0 +1,81 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  line-height: 1.25rem;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+
+h1, .h1 {
+  font-weight: 700;
+}
+
+.headings-color {
+  color: $headings-color;
+}
+
+.text-15pt {
+  font-size: .9375rem !important;
+}
+
+.decoration-0 {
+  @include hover {
+    text-decoration: none;
+  }
+}
+
+.link-date {
+  color: $link-color;
+  position: relative;
+  overflow: hidden;
+  background: rgba($primary, .05);
+  padding: 2px 4px;
+  border-radius: 2px;
+  
+  &::after {
+    content: "................................................................";
+    color: rgba(theme-color('dark-gray'), .4);
+    font-size: .75rem;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    top: .525rem;
+    white-space: nowrap;
+  }
+
+  @include hover {
+    text-decoration: none;
+  }
+}
+
+.text-amount {
+  font-size: 30px;
+  letter-spacing: 2.1px;
+  color: #112B4A;
+  line-height: 2.1875rem;
+}
+
+.text-stats {
+  font-weight: bold;
+  letter-spacing: 0.93px;
+  font-size: .8125rem;
+  display: flex;
+  align-items: center;
+  
+  .material-icons {
+    margin-left: .125rem;
+    font-size: 1rem;
+  }
+}

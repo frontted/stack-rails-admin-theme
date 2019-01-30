@@ -1,0 +1,51 @@
+<%
+  pages = pages || 2
+  first = first || false
+  prevItem = prevItem || true
+  nextItem = nextItem || true 
+  last = last || false
+  labels = labels || false
+  align = align || 'left'
+  className= className || ''
+%>
+<ul class="pagination<% if align == 'center' %> justify-content-center<% end %><% if align == 'right' %> justify-content-end<% end %><%= className %>">
+  <% if first %>
+  <li class="page-item disabled">
+    <a class="page-link" href="#" aria-label="Previous">
+      <span aria-hidden="true" class="material-icons">first_page</span>
+      <span<% if labels.blank? %> class="sr-only"<% end %>>First</span>
+    </a>
+  </li>
+  <% end %>
+  <% if prevItem %>
+  <li class="page-item disabled">
+    <a class="page-link" href="#" aria-label="Previous">
+      <span aria-hidden="true" class="material-icons">chevron_left</span>
+      <span<% if labels.blank? %> class="sr-only"<% end %>>Prev</span>
+    </a>
+  </li>
+  <% end %>
+  <% (0..pages-1).each do |i| %>
+    <li class="page-item<% if i == 0 %> active<% end %>">
+      <a class="page-link" href="#" aria-label="<%= i+1 %>">
+        <span><%= i+1 %></span>
+      </a>
+    </li>
+  <% end %>
+  <% if nextItem %>
+  <li class="page-item">
+    <a class="page-link" href="#" aria-label="Next">
+      <span<% if labels.blank? %> class="sr-only"<% end %>>Next</span>
+      <span aria-hidden="true" class="material-icons">chevron_right</span>
+    </a>
+  </li>
+  <% end %>
+  <% if last.present? %>
+  <li class="page-item">
+    <a class="page-link" href="#" aria-label="Next">
+      <span<% if labels.blank? %> class="sr-only"<% end %>>Last</span>
+      <span aria-hidden="true" class="material-icons">last_page</span>
+    </a>
+  </li>
+  <% end %>
+</ul>

@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,700|Source+Sans+Pro:400,400i,600,700');
+
+// $material-design-icons-font-path: '../fonts/material-icons/' !default;
+$material-design-icons-font-path: 'material-design-icons-iconfont/dist/fonts/' !default;
+
+$fa-font-path:                    '@fortawesome/fontawesome-free/webfonts' !default;
+
+$body-bg:                           #F7F8F9 !default;
+$body-color:                        #112b4a !default;
+$link-color:                        #4a90e2 !default;
+$text-muted:                        rgba(#374D67, .54) !default;
+
+$primary:                           #308AF3 !default;
+$primary-dark:                      darken($primary, 10%) !default;
+$success:                           #48BA16 !default;
+$dark:                              #364C66 !default;
+$info:                              #51A7C5 !default;
+
+$enable-shadows:                    true !default;
+$gutter:                 1rem;
+
+$mdc-theme-secondary:               $primary !default;
+
+$dark-gray:                         #939FAD !default;
+$light-gray:                        #ECEEF0 !default;
+
+$theme-colors: (
+  "teal": #16BA71,
+  "purple": #5163C5,
+  "dark-gray": $dark-gray,
+  "light-gray": $light-gray,
+  "muted-light": #DBDFE4,
+) !default;
+
+$font-size-base:                    .9375rem !default; // 15px
+$font-family-base:                  'Source Sans Pro', sans-serif;
+
+$headings-font-family:              'Open Sans', monospace !default;
+
+$small-font-size:                   .8125rem !default;
+
+$headings-color:                    rgba($body-color, .84) !default;
+
+// $paragraph-margin-bottom:           .9375rem !default;
+$bottom-spacing:                    0.9375rem * 2 !default;
+
+$border-color:                      #efefef !default;
+
+$badge-font-size:                   .675rem !default;
+$badge-font-weight:                 bold !default;
+$badge-padding-y:                   .25rem !default;
+$badge-padding-x:                   .25rem !default;
+$badge-border-radius:               2px !default;
+
+$breadcrumb-padding-y:              0 !default;
+$breadcrumb-padding-x:              0 !default;
+$breadcrumb-bg:                     transparent;
+$breadcrumb-divider-color:          rgba(#364C66, .24) !default;
+$breadcrumb-active-color:           rgba(#364C66, .54) !default;
+
+$table-border-color:                $border-color !default;
+$table-cell-padding:                .35rem 1rem !default;
+// 
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+$btn-font-weight:            600 !default;
+
+$input-btn-padding-y:         .375rem !default;
+$input-btn-padding-x:         .875rem !default;
+$input-btn-font-size:         .875rem !default;
+
+
+$input-btn-padding-y-sm:      .15rem !default;
+$input-btn-padding-x-sm:      .5rem !default;
+$input-btn-font-size-sm:      .65rem !default;
+
+$input-btn-padding-y-lg:      .35rem !default;
+$input-btn-padding-x-lg:      .85rem !default;
+$input-btn-font-size-lg:      1rem !default;
+
+//
+$input-border-color:                #DBDFE4 !default;
+$input-placeholder-color:           #A6B0BC !default;
+$input-focus-border-color:          $primary !default;
+
+$input-group-addon-bg:              white !default;
+$input-group-addon-color:           $dark-gray !default;
+
+$navbar-height:                     64px !default;
+$navbar-item-spacing:               1rem !default;
+$navbar-nav-link-padding-x:         .75rem !default;
+
+$navbar-light-color:                rgba(#384E68, .54) !default;
+$navbar-light-active-color:         rgba(17,43,74,.84) !default;
+
+$navbar-dark-color:                 rgba(white, .54) !default;
+
+$mdk-drawer-width:                  300px !default;
+$layout-mini-drawer-width:          64px !default;
+
+$sidebar-spacing-x:                 1.25rem !default;
+$sidebar-spacing-y:                 1rem !default;
+
+$sidebar-heading-font-size:         .6875rem !default;
+$sidebar-heading-letter-spacing:    .92px !default;
+$sidebar-heading-font-weight:       bold !default;
+$sidebar-light-heading-color:      rgba(17,43,74,.84) !default;
+$sidebar-dark-heading-color:       rgba(255,255,255,.84) !default;
+
+$sm-icon-spacing-x:                 .625rem !default;
+$sm-button-font-weight:             600 !default;
+$sm-button-font-size:              1rem !default;
+
+$ssm-button-height:                 2rem !default;
+$ssm-button-font-size:              .875rem !default;
+
+$sm-light-button-color:             $dark-gray !default;
+$sm-light-open-bg:                  #F7F8F9 !default;
+$sm-light-icon-color:               rgba(#A4AFBA, .5) !default;
+$sm-light-hover-icon-color:         $dark-gray !default;
+$sm-light-active-button-color:      rgba(#354B66, .84) !default;
+$sm-light-active-icon-color:        $primary !default;
+$sm-light-toggle-color:             #BBBCBD !default;
+$sm-light-hover-button-bg:          transparent !default;
+
+$ssm-light-button-color:            $sm-light-button-color !default;
+$sm-light-open-button-color:        #384E68 !default;
+$sm-light-open-icon-color:          $primary !default;
+
+$sidebar-light-container-border-color: $border-color !default;
+$sidebar-light-border-color:        $border-color !default;
+$sidebar-light-heading-color:       rgba(#364C66, .3) !default;
+
+$sidebar-dark-heading-color:        rgba(white, .18) !default;
+$sm-dark-button-color:              rgba($dark-gray, .84) !default;
+$sm-dark-icon-color:                rgba(#A4AFBA, .5) !default;
+$sm-dark-active-button-color:       rgba(white, .84) !default;
+$sm-dark-active-icon-color:         $primary !default;
+
+$sm-toggle-font-size:               18px !default;
+$sm-toggle-icon:                    "\e148" !default;
+$sm-open-toggle-icon:               "\e15d" !default;
+
+$dropdown-padding-y:                .625rem !default;
+$dropdown-border-color:             $border-color !default;
+$dropdown-border-radius:            5px !default;
+$dropdown-box-shadow:               0 5px 11px 0 rgba(0,0,0,0.07) !default;
+
+// $dropdown-link-color:               $dark-gray !default;
+$dropdown-link-hover-color:         #384E68 !default;
+$dropdown-link-hover-bg:            transparent !default;
+
+$dropdown-link-active-color:        $primary !default;
+$dropdown-link-active-bg:           transparent !default;
+
+$dropdown-item-padding-y:           .25rem !default;
+$dropdown-item-padding-x:           1.25rem !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 966px
+) !default;
+
+
+$card-border-color:                 $border-color !default;
+
+$list-group-item-padding-y:         1rem !default;
+$list-group-border-color:           $border-color !default;
+
+$pagination-color:                  #929EAC !default;
+$pagination-border-width:           0 !default;
+$pagination-line-height:            30px !default;
+$pagination-bg:                     #ECEEF0 !default;
+$pagination-active-bg:              $primary;
+
+$pagination-disabled-bg:            rgba($pagination-bg, .5) !default;
+$pagination-disabled-color:         rgba($pagination-color, .3) !default;
+
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+
+// Sidebar style guide (default)
+@import 'sidebar-style-guide/sass/variables';
+
+// MDK (default)
+@import 'material-design-kit/src/variables';

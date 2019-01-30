@@ -1,0 +1,113 @@
+/* Material Design Icons - Setup Method 2. Self hosting
+ * http://google.github.io/material-design-icons/ */
+
+ $MD-icon-path-name: $material-design-icons-font-path + 'MaterialIcons-Regular' !default;
+
+ @font-face {
+   font-family: 'Material Icons';
+   font-style: normal;
+   font-weight: 400;
+   src: url(asset-path("#{$MD-icon-path-name}.eot")); /* For IE6-8 */
+   src: local("Material Icons"),
+        local("MaterialIcons-Regular"),
+        url(asset-path("#{$MD-icon-path-name}.woff2")) format('woff2'),
+        url(asset-path("#{$MD-icon-path-name}.woff")) format('woff'),
+        url(asset-path("#{$MD-icon-path-name}.ttf")) format('truetype');
+ }
+ 
+ .material-icons {
+   font-family: 'Material Icons';
+   font-weight: normal;
+   font-style: normal;
+   font-size: 24px;  /* Preferred icon size */
+   display: inline-block;
+   line-height: 1;
+   text-transform: none;
+   letter-spacing: normal;
+   word-wrap: normal;
+   white-space: nowrap;
+   direction: ltr;
+ 
+   /* Support for all WebKit browsers. */
+   -webkit-font-smoothing: antialiased;
+   /* Support for Safari and Chrome. */
+   text-rendering: optimizeLegibility;
+ 
+   /* Support for Firefox. */
+   -moz-osx-font-smoothing: grayscale;
+ 
+   /* Support for IE. */
+   font-feature-settings: 'liga';
+ 
+   &.md-14 { font-size: 14px; }
+   &.md-18 { font-size: 18px; }
+   &.md-24 { font-size: 24px; }
+   &.md-36 { font-size: 36px; }
+   &.md-48 { font-size: 48px; }
+   &.md-128 { font-size: 128px; }
+ }
+ 
+ .comment-counter{
+   position: relative;
+   span {
+     position: absolute;
+     background: rgba(239,244,248,1);
+     left: 15px;
+     top: -5px;
+     width: 1rem;
+     text-align: center;
+     font-size: 1rem;
+     border-radius: 50%;
+     color:$body-color;
+     border:1px solid $body-color;
+   }
+ }
+ 
+ .md-top-1 {
+   position:relative;
+   top: -1px;
+ }
+
+ 
+.material-icons {
+  vertical-align: middle;
+}
+
+.icon-muted {
+  color: rgba(#374D67, .2) !important;
+}
+
+a.icon-muted:hover .material-icons {
+  color: $primary;
+}
+
+.icon-16pt {
+  font-size: 1rem !important;
+}
+.icon-20pt {
+  font-size: 1.25rem !important;
+}
+.icon-30pt {
+  font-size: 30px !important;
+}
+.icon-40pt {
+  font-size: 40px !important;
+}
+.icon-60pt {
+  font-size: 60px !important;
+}
+
+#app-icons {
+  .col-auto {
+  padding: 1rem;
+  height: 120px;
+  width: 20%;
+  }
+  .title {
+  max-width: 112px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 .35rem;
+  }
+}

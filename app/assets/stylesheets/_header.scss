@@ -1,0 +1,9 @@
+.mdk-header {
+  margin-bottom: $spacer;
+  height: auto;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+}

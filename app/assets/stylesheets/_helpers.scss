@@ -1,0 +1,26 @@
+.bg-primary-dark {
+  background-color: $primary-dark !important;
+}
+.border-style-dashed {
+  border-style: dashed !important;
+}
+.border-bottom-2 {
+  border-bottom: 2px solid $border-color;
+}
+.text-body {
+  color: $body-color;
+  &[href] {
+    @include hover {
+      color: $body-color;
+    }
+  }
+}
+.text-underline {
+  text-decoration: underline;
+}
+.text-underline-0 {
+  text-decoration: none;
+  @include hover {
+    text-decoration: none;
+  }
+}
